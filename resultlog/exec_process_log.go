@@ -16,6 +16,7 @@ func LogExecResult(result *action.ExecResult) {
 		"timestamp":      result.ActitivityTimestamp.Format(time.RFC3339),
 		"Action":         "ExecProcess",
 		"UserName":       fmt.Sprintf("%s", result.UserName.Username),
+		"ExecProcessID":  result.ExecProcessPid,
 		"ProcessName":    result.ProcessName,
 		"ProcessCmdLine": result.ProcessCmdLine,
 		"ProcessID":      result.ProcessID,
